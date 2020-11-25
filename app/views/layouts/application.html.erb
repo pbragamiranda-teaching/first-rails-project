@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FirstRailsProject</title>
+    <title>SambaBlog</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,14 @@
   </head>
 
   <body>
+    <div style='background-color: lightgreen;padding: 8px;'>
+      Samba Blog
+      <%= link_to 'Home', root_path %>
+      <%= link_to 'About', about_path%>
+      <%= link_to 'Contact', contact_path %>
+    </div>
+
     <%= yield %>
+
   </body>
 </html>

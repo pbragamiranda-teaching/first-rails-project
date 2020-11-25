@@ -1,0 +1,22 @@
+<h1>Welcome to our Samba Blog</h1>
+
+<!-- ER = escreve codigo ruby que NÃO aparece pro usuário  -->
+<% time = Time.now%>
+
+<!-- PE = escreve codigo ruby que APARECE pro usuário -->
+<p>Today is <%= time %></p>
+
+<!-- listar as escolas de samba de um array -->
+<!--  -->
+
+<ul>
+  <% @samba_schools.each do |name| %>
+    <li> <%= name.capitalize %> </li>
+  <% end %>
+</ul>
+
+
+<form action="/">
+  <input type="text" name="samba_school", placeholder="<%= params[:samba_school] %>">
+  <input type="submit">
+</form>
