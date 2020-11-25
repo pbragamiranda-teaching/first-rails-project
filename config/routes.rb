@@ -13,5 +13,4 @@ end
 
 # FOLLOW THE FLOW
 # SEGUE A BATERIA
-
 # routes -> controller -> view
